@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: black;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(black, #001f3f);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00aaff;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00aaff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #00aaff;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+}
+
+form button {
+  padding: 10px;
+  background: #00aaff;
+  border: none;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+}
